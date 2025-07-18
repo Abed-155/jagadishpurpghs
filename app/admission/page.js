@@ -96,7 +96,7 @@ export default function AdmissionForm() {
           </div>
           <div>
             <label className="block mb-1 font-semibold">
-              Father's Name (English)
+              Father&apos;s Name (English)
             </label>
             <input
               type="text"
@@ -135,7 +135,7 @@ export default function AdmissionForm() {
           </div>
           <div>
             <label className="block mb-1 font-semibold">
-              Mother's Name (English)
+              Mother&apos;s Name (English)
             </label>
             <input
               type="text"
