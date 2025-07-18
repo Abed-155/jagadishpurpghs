@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://jagadishpurpghs.vercel.app/</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/admission</loc>
+    <loc>https://jagadishpurpghs.vercel.app/admission</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/students</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/teachers</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/gallery</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://jagadishpurpghs.vercel.app/student</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- চাইলে আরও পেইজ যুক্ত করুন -->
+  <url>
+    <loc>https://jagadishpurpghs.vercel.app/teacher</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jagadishpurpghs.vercel.app/gallery</loc>
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
