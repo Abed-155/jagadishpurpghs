@@ -6,6 +6,7 @@ import QuickStats from "./components/QuickStats";
 import SchoolOverview from "./components/SchoolOverVeiw";
 import QuickContact from "./components/QuickContact";
 import Head from "next/head";
+import SchoolTitle from "./components/SchoolTitle";
 
 export default function HomePage() {
   return (
@@ -41,8 +42,9 @@ export default function HomePage() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main>
+        <SchoolTitle />
         <HomeSlider />
-        <div className="max-w-5xl mx-auto p-6 space-y-10">
+        <div className="max-w-5xl mx-auto p-2 mt-4 md:p-6 space-y-10">
           <LastNotice />
           <PresidentsMessage />
           <HeadTeacherMessage />

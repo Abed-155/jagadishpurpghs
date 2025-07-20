@@ -3,8 +3,8 @@ import SubHeading from "./SubHeading";
 
 export default function HeadTeacherMessage() {
   return (
-    <section className="bg-blue-50 max-w-5xl p-6 rounded-lg shadow border border-blue-100">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+    <section className="bg-blue-50 max-w-5xl p-4 md:p-6 rounded-lg shadow border border-blue-100">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* ছবি */}
         <div className="w-full md:w-1/3">
           <Image

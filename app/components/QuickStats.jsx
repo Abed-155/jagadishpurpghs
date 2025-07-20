@@ -10,10 +10,10 @@ export default function QuickStats() {
   ];
 
   return (
-    <section className="bg-blue-50 max-w-5xl p-8 rounded-lg shadow border border-blue-100">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+    <section className="bg-blue-50 max-w-5xl p-2 md:p6 rounded-lg shadow border border-blue-100">
+      <div className="max-w-6xl mx-auto text-center">
         <SubHeading title=" ফলাফল ও পরিসংখ্যান" />
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-5 md:p-4 gap-4 md:gap-6">
           {stats.map((stat, i) => (
             <div
               key={i}

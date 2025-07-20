@@ -2,7 +2,7 @@ import SubHeading from "./SubHeading";
 
 export default function QuickContact() {
   return (
-    <section className="text-center bg-blue-100 p-6 rounded-lg">
+    <section className="text-center bg-blue-100 p-4 md:p-6 rounded-lg">
       <SubHeading title="স্কুল সম্পর্কে আরও জানতে চান?" />
       <p className="text-gray-700 mb-4">
         আমাদের অফিসে যোগাযোগ করুন বা কল করুন: <strong>০১৮৩৬-২২৫৮৮৬</strong>
