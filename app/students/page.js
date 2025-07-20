@@ -18,12 +18,12 @@ export default function StudentCorner() {
           content="জগদীশপুর পাবলিক গার্লস হাই স্কুলের সকল শ্রেণির শিক্ষার্থীদের রোল নম্বর, নাম ও গ্রুপভিত্তিক তালিকা।"
         />
       </Head>
-      <main className="max-w-5xl mx-auto p-6 space-y-12">
+      <main className="max-w-5xl mx-auto px-2 md:p-6 space-y-12">
         <PageHeading title=" শিক্ষার্থী কর্নার" />
         <Academic />
 
         {/* Notice Board Section */}
-        <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+        <section className="bg-white p-4 md:p-6 rounded-lg shadow-md border border-gray-200">
           <SubHeading title="নোটিশ বোর্ড" />
           <p className="text-gray-700">
             নতুন নোটিশ, পরীক্ষার সময়সূচী, এবং অন্যান্য গুরুত্বপূর্ণ তথ্য এখান
@@ -38,7 +38,7 @@ export default function StudentCorner() {
         </section>
 
         {/* Downloads Section */}
-        <section className="bg-blue-50 p-6 rounded-lg shadow-md border border-blue-200">
+        <section className="bg-blue-50 p-4 md:p-6 rounded-lg shadow-md border border-blue-200">
           <SubHeading title="ডাউনলোডস" />
           <p className="text-blue-900 mb-4">
             প্রয়োজনীয় ফরম, গাইডলাইন ও অন্যান্য ডকুমেন্ট ডাউনলোড করুন।

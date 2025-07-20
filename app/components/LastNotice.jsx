@@ -8,7 +8,7 @@ export default function LastNotice() {
   const lastNotice = notices[notices.length - 1];
 
   return (
-    <section className="bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-xl border border-blue-100 shadow-md px-6 py-4 max-w-5xl mx-auto mt-6">
+    <section className="bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-xl border border-blue-100 shadow-md p-4 max-w-5xl mx-auto mt-6">
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-xl font-semibold text-blue-800">
           সর্বশেষ বিজ্ঞপ্তি
@@ -21,7 +21,7 @@ export default function LastNotice() {
         </Link>
       </div>
 
-      <div className="bg-blue-100 px-4 py-2 rounded-md">
+      <div className="bg-blue-100 p-2 rounded-md">
         <marquee
           behavior="scroll"
           direction="left"

@@ -3,10 +3,10 @@ import { schoolStats } from "./daga";
 
 export default function StudentStatsTable() {
   return (
-    <section className="bg-white p-6 rounded-lg shadow border border-blue-100">
+    <section className="bg-white p-4 md:p-6 rounded-lg shadow border border-blue-100">
       <SubHeading title="শ্রেণিভিত্তিক শিক্ষার্থী সংখ্যা" />
 
-      <table className="min-w-full table-auto bg-blue-50 p-4 rounded-lg shadow-sm text-center">
+      <table className=" table-auto w-full bg-blue-50 p-4 rounded-lg shadow-sm text-center">
         <thead className="bg-blue-200">
           <tr>
             <th className="border border-gray-300 p-2">Classes</th>

@@ -5,7 +5,7 @@ import SubHeading from "../components/SubHeading";
 
 export default function SchoolAchieve() {
   return (
-    <section className="bg-white p-6 rounded-lg shadow border border-blue-100">
+    <section className="bg-white p-4 md:p-6 rounded-lg shadow border border-blue-100">
       <SubHeading title=" বিগত সালের এস.এস.সি ফলাফল" />
       <ul className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 text-gray-700">
         {sscResult.map((item) => (

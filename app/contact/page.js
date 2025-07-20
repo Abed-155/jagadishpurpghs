@@ -5,6 +5,7 @@ import PageHeading from "../components/PageHeading";
 import ContactForm from "./ContactForm";
 import FAQ from "./FAQ";
 import Head from "next/head";
+import ContactInfo from "./ContactInfo";
 
 export default function ContactPage() {
   return (
@@ -17,54 +18,15 @@ export default function ContactPage() {
         />
       </Head>
 
-      <main className="max-w-4xl mx-auto p-6 space-y-10">
-        {/* Header */}
-        <section className="text-center">
-          <PageHeading title="যোগাযোগ করুন" />
+      <main className="max-w-4xl mx-auto p-2 md:p-6 space-y-10">
+        <PageHeading title="যোগাযোগ করুন" />
 
-          <p className="text-gray-600">
-            আপনার যেকোনো জিজ্ঞাসার জন্য আমাদের সাথে যোগাযোগ করুন।
-          </p>
-        </section>
+        <p className="text-gray-600 italic  text-center">
+          আপনার যেকোনো জিজ্ঞাসার জন্য আমাদের সাথে যোগাযোগ করুন।
+        </p>
 
-        {/* Contact Info */}
-        <section className="bg-blue-50 p-6 rounded-lg shadow-md space-y-6">
-          <div className="flex items-start space-x-4">
-            <FaMapMarkerAlt className="text-blue-600 text-xl mt-1" />
-            <div>
-              <h3 className="font-semibold">ঠিকানা</h3>
-              <p>
-                জগদীশপুর পাবলিক গার্লস হাই স্কুল <br /> গ্রাম: জগদীশপুর, উপজেলা:
-                মাধবপুর, জেলা: হবিগঞ্জ।
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <FaPhoneAlt className="text-blue-600 text-xl mt-1" />
-            <div>
-              <h3 className="font-semibold">ফোন</h3>
-              <p>01836-225886</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <FaEnvelope className="text-blue-600 text-xl mt-1" />
-            <div>
-              <h3 className="font-semibold">ইমেইল</h3>
-              <p>jpghs2019@gmail.com</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <IoTimeSharp className="text-blue-600 text-xl mt-1" />
-            <div>
-              <h3 className="font-semibold">অফিস সময়</h3>
-              <p> রবি - বৃহস্পতিবার, সকাল ১০টা - বিকাল ৪টা</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Form */}
+        <ContactInfo />
         <ContactForm />
-
         <FAQ />
       </main>
     </>

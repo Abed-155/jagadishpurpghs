@@ -6,7 +6,6 @@ export default function QuickStats() {
     { label: "Total Teachers", value: "6+" },
     { label: "SSC Pass Rate (2024)", value: "77.78%" },
     { label: "SSC Pass Rate (2025)", value: "69.23%" },
-    { label: "Classes", value: "Six to Ten" },
   ];
 
   return (

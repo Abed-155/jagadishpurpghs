@@ -33,11 +33,14 @@ const faqData = [
 
 export default function FAQ() {
   return (
-    <section className="bg-white p-6 rounded-lg shadow-md space-y-6">
+    <section className="bg-white p-4 md:p-6 rounded-lg shadow-md space-y-6">
       <SubHeading title="সাধারণ প্রশ্ন ও উত্তর" />
       <div className="space-y-4 text-gray-700">
         {faqData.map((item) => (
-          <div key={item.id} className="bg-blue-50 p-4 rounded-lg shadow-sm ">
+          <div
+            key={item.id}
+            className="bg-blue-50 p-2 md:p-4 rounded-lg shadow-sm "
+          >
             <p className="font-semibold">🔹 {item.question}</p>
             <p>{item.answer}</p>
           </div>

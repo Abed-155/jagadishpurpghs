@@ -32,7 +32,7 @@ const academicInfo = [
 
 export default function Academic() {
   return (
-    <section className="bg-blue-50 p-6 rounded-lg shadow-md border border-blue-200">
+    <section className="bg-blue-50 m-4 md:p-6 rounded-lg shadow-md border border-blue-200">
       <SubHeading title="একাডেমিক তথ্য" />
       <ul className="list-disc list-inside space-y-3 text-blue-900 text-lg">
         {academicInfo.map((item) => (

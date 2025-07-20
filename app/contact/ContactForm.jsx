@@ -44,7 +44,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-blue-50 p-6 rounded-lg shadow-md space-y-6">
+    <section className="bg-blue-50 p-4 md:p-6 rounded-lg shadow-md space-y-6">
       <SubHeading title="ই-মেইল করুন" />
       <form
         onSubmit={handleSubmit}

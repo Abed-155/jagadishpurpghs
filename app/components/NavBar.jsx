@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi"; // ✅ Import Feather icons
+import Logo from "./Logo";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -28,24 +29,9 @@ export default function Navbar() {
   return (
     <header className="sticky z-50 top-0">
       <nav className="bg-gray-900 text-white shadow-md ">
-        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <Link href="/">
-                <Image
-                  src="/logo.png"
-                  alt="school-logo"
-                  width={50}
-                  height={50}
-                  className=" rounded-full bg-white"
-                />
-              </Link>
-              <span className="md:text-2xl text-lg font-bold text-blue-400">
-                জগদীশপুর <br />
-                পাবলিক গার্লস হাই ‍ স্কুল
-              </span>
-            </div>
+            <Logo />
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6">
@@ -67,7 +53,7 @@ export default function Navbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="focus:outline-none focus:ring-2 focus:ring-blue-400 p-2"
+                className="focus:outline-none border rounded-lg focus:ring-2 focus:ring-blue-400 p-2"
                 aria-label="Toggle menu"
               >
                 {isOpen ? (

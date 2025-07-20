@@ -13,7 +13,7 @@ export default function StudentList() {
   const filteredStudents = filtered(studentsData, searchTerm, selectedClass);
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+    <div className="bg-white m-4 md:p-6 rounded-lg shadow-md border border-gray-200">
       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="bg-blue-50 text-white px-6 py-4">
           <SubHeading title="ছাত্রী তালিকা" />

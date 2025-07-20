@@ -47,7 +47,7 @@ export default function AdmissionForm() {
           content="ভর্তি সংক্রান্ত সকল তথ্য, নিয়মাবলি, যোগ্যতা এবং আবেদন ফর্ম ডাউনলোড।"
         />
       </Head>
-      <main className="max-w-4xl mx-auto p-6 bg-white rounded shadow">
+      <main className="max-w-4xl mx-auto px-2 md:p-6 bg-white rounded shadow">
         <PageHeading title=" ভর্তির আবেদন ফর্ম" />
 
         <form

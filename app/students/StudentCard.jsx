@@ -10,7 +10,7 @@ export default function StudentCard({ students }) {
   }
 
   return (
-    <div className="p-4 grid md:grid-cols-3 gap-4">
+    <div className="p-2 md:p-4 grid md:grid-cols-3 gap-4">
       {students.map((student) => (
         <div
           key={student.id}

@@ -16,7 +16,7 @@ export default function Gallery() {
           content="বিদ্যালয়ের বিভিন্ন অনুষ্ঠান, ছাত্রছাত্রীদের কার্যক্রম, এবং ক্যাম্পাসের মুহূর্তগুলোর ফটো গ্যালারি।"
         />
       </Head>
-      <main className="max-w-5xl mx-auto p-6 space-y-10">
+      <main className="max-w-5xl mx-auto px-2 md:p-6 space-y-10">
         <PageHeading title="স্কুল গ্যালারি" />
         <Teacher />
         <Students />

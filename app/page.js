@@ -3,10 +3,10 @@ import PresidentsMessage from "./components/PresidentMessage";
 import HeadTeacherMessage from "./components/HeadTeacherMessage";
 import LastNotice from "./components/LastNotice";
 import QuickStats from "./components/QuickStats";
-import SchoolOverview from "./components/SchoolOverVeiw";
 import QuickContact from "./components/QuickContact";
 import Head from "next/head";
 import SchoolTitle from "./components/SchoolTitle";
+import DateDisplay from "./components/DateDiplay";
 
 export default function HomePage() {
   return (
@@ -43,13 +43,13 @@ export default function HomePage() {
       </Head>
       <main>
         <SchoolTitle />
+        <DateDisplay />
         <HomeSlider />
         <div className="max-w-5xl mx-auto p-2 mt-4 md:p-6 space-y-10">
           <LastNotice />
           <PresidentsMessage />
           <HeadTeacherMessage />
           <QuickStats />
-          <SchoolOverview />
           <QuickContact />
         </div>
       </main>

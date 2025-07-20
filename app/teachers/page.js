@@ -16,7 +16,7 @@ export default function TeacherList() {
           content="জগদীশপুর পাবলিক গার্লস হাই স্কুলের অভিজ্ঞ ও দক্ষ শিক্ষকমণ্ডলীর তালিকা ও তথ্য।"
         />
       </Head>
-      <main className="max-w-6xl mx-auto p-6">
+      <main className="max-w-6xl mx-auto p-2 md:p-6">
         <PageHeading title="আমাদের শিক্ষকমন্ডলী" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
           {teachers.map((teacher) => (

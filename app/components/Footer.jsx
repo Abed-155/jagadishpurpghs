@@ -9,7 +9,7 @@ import EducationalLink from "./EducationalLink";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-10 pb-6">
+    <footer className="bg-gray-900 text-white pt-10 pb-6 mt-4">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
         <ImportantLink />
         <EducationalLink />
