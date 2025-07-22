@@ -1,5 +1,6 @@
 "use client";
 
+import PageHeading from "@/app/components/PageHeading";
 import Link from "next/link";
 
 const examRoutines = [
@@ -27,10 +28,8 @@ const examRoutines = [
 
 export default function ExamRoutinePage() {
   return (
-    <main className="max-w-4xl mx-auto p-6 space-y-6">
-      <h1 className="text-3xl font-bold text-blue-800 mb-6">
-        📝 পরীক্ষার রুটিন
-      </h1>
+    <main className="max-w-4xl mx-auto px-2 md:p-6 space-y-6">
+      <PageHeading title="পরীক্ষার রুটিন" />
       <div className="grid md:grid-cols-2 gap-6">
         {examRoutines.map((exam, index) => (
           <div

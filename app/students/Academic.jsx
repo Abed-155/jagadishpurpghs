@@ -1,6 +1,7 @@
 import React from "react";
 import SubHeading from "../components/SubHeading";
 import Link from "next/link";
+import { FaArrowRight, FaLongArrowAltRight } from "react-icons/fa";
 
 const academicInfo = [
   {
@@ -32,15 +33,16 @@ const academicInfo = [
 
 export default function Academic() {
   return (
-    <section className="bg-blue-50 m-4 md:p-6 rounded-lg shadow-md border border-blue-200">
+    <section className="bg-blue-50 p-4 md:p-6 rounded-lg shadow-md border border-blue-200">
       <SubHeading title="একাডেমিক তথ্য" />
-      <ul className="list-disc list-inside space-y-3 text-blue-900 text-lg">
+      <ul className=" space-y-3 text-blue-900 text-lg">
         {academicInfo.map((item) => (
           <li key={item.id}>
             <Link
               href={item.href}
-              className="hover:underline hover:text-blue-600"
+              className="hover:underline flex gap-2 items-center text-sm md:text-lg hover:text-blue-600"
             >
+              <FaLongArrowAltRight />
               {item.title}
             </Link>
           </li>
