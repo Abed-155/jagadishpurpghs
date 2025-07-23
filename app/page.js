@@ -1,5 +1,4 @@
 import HomeSlider from "./components/HomeSlider";
-import PresidentsMessage from "./components/PresidentMessage";
 import HeadTeacherMessage from "./components/HeadTeacherMessage";
 import LastNotice from "./components/LastNotice";
 import QuickStats from "./components/QuickStats";
@@ -7,6 +6,7 @@ import QuickContact from "./components/QuickContact";
 import Head from "next/head";
 import SchoolTitle from "./components/SchoolTitle";
 import DateDisplay from "./components/DateDiplay";
+import PresidentsMessage from "./prsident-msg/PresidentMessage";
 
 export default function HomePage() {
   return (
@@ -31,9 +31,9 @@ export default function HomePage() {
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/og-image.jpg"
+          content="https://jagadishpurpghs.vercel.app//og-image.jpg"
         />
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:url" content="https://jagadishpurpghs.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name"

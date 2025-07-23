@@ -1,7 +1,10 @@
 "use client";
 
+import DownloadBtn from "@/app/components/DownloadBtn";
 import PageHeading from "@/app/components/PageHeading";
+import SubHeading from "@/app/components/SubHeading";
 import Link from "next/link";
+import { FaFileDownload } from "react-icons/fa";
 
 const examRoutines = [
   {
@@ -36,20 +39,11 @@ export default function ExamRoutinePage() {
             key={index}
             className="bg-blue-50 p-5 rounded-lg shadow hover:shadow-md transition"
           >
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">
-              {exam.title}
-            </h2>
-            <p className="text-gray-600 mb-4">
+            <SubHeading title={exam.title} />
+            <p className="text-gray-600 text-sm md:text-lg mb-4">
               {exam.title} এর রুটিন নিচের বাটনে ক্লিক করে ডাউনলোড করুন।
             </p>
-            <Link
-              href={exam.pdfLink}
-              target="_blank"
-              download
-              className="inline-block bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800  transition"
-            >
-              📥 পিডিএফ ডাউনলোড
-            </Link>
+            <DownloadBtn url={exam.pdfLink} />
           </div>
         ))}
       </div>

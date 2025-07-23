@@ -1,8 +1,8 @@
-import SubHeading from "./SubHeading";
+import SubHeading from "../components/SubHeading";
 
 export default function PresidentsMessage() {
   return (
-    <section className="bg-blue-50 max-w-5xl p-4 md:p-8 rounded-lg shadow border border-blue-100">
+    <section className="bg-blue-50 max-w-5xl m-auto mt-4 p-4 md:p-8 rounded-lg shadow border border-blue-100">
       <SubHeading title=" সভাপতির বার্তা" />
       <p className="text-gray-700 leading-7 mb-4 text-justify">
         জগদীশপুর পাবলিক গার্লস হাই স্কুল একটি সুপ্রতিষ্ঠিত শিক্ষাপ্রতিষ্ঠান, যা

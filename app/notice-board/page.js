@@ -3,6 +3,7 @@ import { FaDownload } from "react-icons/fa";
 import PageHeading from "../components/PageHeading";
 import { notices } from "./data";
 import QuickContact from "../components/QuickContact";
+import DownloadBtn from "../components/DownloadBtn";
 
 export default function NoticeBoard() {
   return (
@@ -26,14 +27,7 @@ export default function NoticeBoard() {
               </p>
 
               {/* PDF Download Button */}
-              <a
-                href={notice.pdfUrl}
-                download
-                className="inline-flex items-center gap-2 text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition"
-              >
-                <FaDownload className="text-white" />
-                PDF
-              </a>
+              <DownloadBtn url={notice.pdfUrl} />
             </div>
           ))}
         </div>

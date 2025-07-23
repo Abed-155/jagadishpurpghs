@@ -29,6 +29,11 @@ const academicInfo = [
     title: "শ্রেণি তথ্য",
     href: "/students/classes",
   },
+  {
+    id: 6,
+    title: "পরীক্ষার ফলাফল",
+    href: "/students/results",
+  },
 ];
 
 export default function Academic() {

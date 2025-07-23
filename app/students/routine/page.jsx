@@ -1,8 +1,7 @@
 "use client";
 
+import DownloadBtn from "@/app/components/DownloadBtn";
 import PageHeading from "@/app/components/PageHeading";
-import Link from "next/link";
-import { FaFileDownload } from "react-icons/fa";
 
 const classRoutines = [
   {
@@ -43,14 +42,7 @@ export default function RoutinePage() {
             <p className="text-gray-600 mb-4 text-sm md:text-lg">
               এই শ্রেণির ক্লাস রুটিন ডাউনলোড করতে নিচের বাটনে ক্লিক করুন।
             </p>
-            <Link
-              href={routine.pdfLink}
-              target="_blank"
-              download
-              className=" bg-blue-700 w-24 flex gap-2 items-center justify-center  text-white px-4 py-2 rounded hover:bg-blue-800 transition"
-            >
-              <FaFileDownload /> PDF
-            </Link>
+            <DownloadBtn url={routine.pdfLink} />
           </div>
         ))}
       </div>
