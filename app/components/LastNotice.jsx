@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { notices } from "../notice-board/data";
+import SubHeading from "./SubHeading";
 
 // Dummy notices array (remove this if already coming from props or data file)
 
@@ -10,9 +11,7 @@ export default function LastNotice() {
   return (
     <section className="bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-xl border border-blue-100 shadow-md p-4 max-w-5xl mx-auto mt-6">
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-xl font-semibold text-blue-800">
-          সর্বশেষ বিজ্ঞপ্তি
-        </h2>
+        <SubHeading title="সর্বশেষ নোটিশ" />
         <Link
           href="/notice-board"
           className="text-sm text-blue-600 hover:underline"

@@ -1,48 +1,44 @@
 // app/downloads/page.jsx
 
+import DownloadBtn from "../components/DownloadBtn";
+import PageHeading from "../components/PageHeading";
+import QuickContact from "../components/QuickContact";
+
 export default function DownloadsPage() {
   const downloads = [
     {
-      title: "📅 ক্লাস রুটিন (Class Routine)",
+      title: "ক্লাস রুটিন",
       file: "/downloads/class-routine.pdf",
     },
     {
-      title: "🎫 পরীক্ষার প্রবেশপত্র (Exam Admit Card)",
+      title: "পরীক্ষার প্রবেশপত্র",
       file: "/downloads/admit-card.pdf",
     },
     {
-      title: "📘 সিলেবাস (Syllabus)",
+      title: "সিলেবাস",
       file: "/downloads/syllabus.pdf",
     },
     {
-      title: "📝 ভর্তি ফর্ম (Admission Form)",
+      title: "ভর্তি ফর্ম",
       file: "/downloads/admission-form.pdf",
     },
   ];
 
   return (
-    <main className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">
-        📥 ডাউনলোড সেকশন
-      </h1>
-
-      <div className="grid gap-6">
+    <main className="max-w-5xl mx-auto px-2 md:p-6">
+      <PageHeading title="ডাউনলোড" />
+      <div className="grid md:gap-4 mb-4 bg-blue-50 p-2 md:p-4 rounded-lg shadow-md space-y-6">
         {downloads.map((item, index) => (
           <div
             key={index}
-            className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 flex items-center justify-between"
+            className="bg-white border border-gray-200 rounded-lg shadow-sm p-2 md:p-4 flex items-center justify-between"
           >
             <span className="font-medium">{item.title}</span>
-            <a
-              href={item.file}
-              download
-              className="bg-blue-700 text-white px-4 py-1.5 rounded hover:bg-blue-800 transition"
-            >
-              ডাউনলোড
-            </a>
+            <DownloadBtn url={item.file} />
           </div>
         ))}
       </div>
+      <QuickContact />
     </main>
   );
 }
