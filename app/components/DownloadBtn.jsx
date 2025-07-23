@@ -9,7 +9,7 @@ export default function DownloadBtn({ url }) {
       download
       className=" bg-blue-700 w-20 flex gap-2 items-center justify-center p-2  text-white md:px-4 md:py-2 rounded hover:bg-blue-800 transition"
     >
-      <FaFileDownload className="text-xl" /> PDF
+      <FaFileDownload className="text-lg" /> PDF
     </Link>
   );
 }
