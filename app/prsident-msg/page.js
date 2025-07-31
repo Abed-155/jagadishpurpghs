@@ -1,5 +1,37 @@
-import PageHeading from "../components/PageHeading";
-import SubHeading from "../components/SubHeading";
+import PageHeading from "@/components/PageHeading";
+
+export const metadata = {
+  title: "সভাপতির বার্তা | জগদীশপুর পাবলিক গার্লস হাই স্কুল",
+  description:
+    "জগদীশপুর পাবলিক গার্লস হাই স্কুল-এর সভাপতি আসগর আলীর পক্ষ থেকে শিক্ষার্থীদের উদ্দেশ্যে গুরুত্বপূর্ণ বার্তা।",
+  keywords: [
+    "সভাপতির বার্তা",
+    "জগদীশপুর পাবলিক গার্লস হাই স্কুল",
+    "বিদ্যালয়ের সভাপতি",
+    "আসগর আলী",
+    "স্কুল বার্তা",
+  ],
+  openGraph: {
+    title: "সভাপতির বার্তা | জগদীশপুর পাবলিক গার্লস হাই স্কুল",
+    description: "সভাপতি আসগর আলীর পক্ষ থেকে শিক্ষার্থীদের জন্য বার্তা।",
+    url: "https://jagadishpurpghs.vercel.app/সভাপতির-বার্তা",
+    type: "article",
+    images: [
+      {
+        url: "https://jagadishpurpghs.vercel.app/images/president.jpg", // আপনার ছবি এখানেই রাখবেন
+        width: 1200,
+        height: 630,
+        alt: "সভাপতি আসগর আলী",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "সভাপতির বার্তা | জগদীশপুর পাবলিক গার্লস হাই স্কুল",
+    description: "সভাপতি আসগর আলীর পক্ষ থেকে শিক্ষার্থীদের জন্য বার্তা।",
+    images: ["https://jagadishpurpghs.vercel.app/images/president.jpg"],
+  },
+};
 
 export default function PresidentsMessage() {
   return (
